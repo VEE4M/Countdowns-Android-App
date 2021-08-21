@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/countdownListFragment">
+
+    <fragment
+        android:id="@+id/addEditCountdownItemFragment"
+        android:name="com.gmail.appverstas.countdownapp.ui.AddEditCountdownItemFragment"
+        android:label="fragment_add_edit_countdown_item"
+        tools:layout="@layout/fragment_add_edit_countdown_item" >
+        <action
+            android:id="@+id/action_addEditCountdownItemFragment_to_countdownListFragment"
+            app:destination="@id/countdownListFragment"
+            app:popUpTo="@id/addEditCountdownItemFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/countdownListFragment"
+        android:name="com.gmail.appverstas.countdownapp.ui.CountdownListFragment"
+        android:label="fragment_countdown_list"
+        tools:layout="@layout/fragment_countdown_list" >
+        <action
+            android:id="@+id/action_countdownListFragment_to_addEditCountdownItemFragment"
+            app:destination="@id/addEditCountdownItemFragment" />
+    </fragment>
+</navigation>

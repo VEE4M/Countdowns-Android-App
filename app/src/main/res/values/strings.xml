@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CountdownZ</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="et_title_hint">Title..</string>
+    <string name="btn_save">Save</string>
+    <string name="title_missing">Title missing.</string>
+    <string name="snackbar_saved">Saved</string>
+    <string name="snackbar_deleted">Deleted</string>
+    <string name="snackbar_undo">Undo</string>
+</resources>
